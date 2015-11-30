@@ -1,0 +1,42 @@
+{
+  "name": "vue-project-start",
+  "version": "1.0.0",
+  "description": "a simple start project is build with vueJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/114000/vue-project-start.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-start"
+  ],
+  "author": "114000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/114000/vue-project-start/issues"
+  },
+  "homepage": "https://github.com/114000/vue-project-start#readme",
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "vue": "^1.0.10",
+    "vue-resource": "^0.1.17",
+    "vue-router": "^0.7.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-runtime": "^6.2.0",
+    "css-loader": "^0.23.0",
+    "style-loader": "^0.13.0",
+    "vue-hot-reload-api": "^1.2.2",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^7.1.5",
+    "webpack": "^1.12.9"
+  }
+}
