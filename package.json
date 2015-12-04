@@ -4,7 +4,8 @@
   "description": "a simple start project is build with vueJS",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w"
+    "start": "webpack-dev-server --inline",
+    "bundle": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "vue-hot-reload-api": "^1.2.2",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.1.5",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }

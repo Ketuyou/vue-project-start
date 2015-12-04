@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import MovieList from './List.vue'
-import Ad from './Ad.vue'
-
+import MovieList from './List'
+import Ad from './Ad'
 
 Vue.use(VueRouter)
 
@@ -17,5 +16,6 @@ Router.map({
     component: Ad,
   },
 })
+
 
 export { Router as default }
