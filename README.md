@@ -8,6 +8,8 @@
 
   ``` bash
   $ git clone git@github.com:114000/vue-project-start.git
+
+  $ cd vue-project-start
   ```
 
   ``` bash
@@ -19,8 +21,6 @@
 2. 安装依赖
 
   ``` bash
-  $ cd vue-project-start
-
   vue-project-start$ npm install
   ```
 
