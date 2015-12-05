@@ -32,7 +32,7 @@
     ```
 
 
-  * 打包正式文件，并切换 index.html 里面的 `<script>`
+  * 或者打包正式文件，并切换 index.html 里面的 `<script>`
 
     ``` bash
     vue-project-start$ npm run bundle
