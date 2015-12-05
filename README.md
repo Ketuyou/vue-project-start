@@ -18,24 +18,26 @@ $ cd vue-project-start
 vue-project-start$ npm install
 ```
 
-3. 8080端口启动服务器监听文件变化，实时刷新
+3. 
+  * 8080端口启动服务器监听文件变化，实时刷新
 
-``` bash
-vue-project-start$ npm start
-```
+    ``` bash
+    vue-project-start$ npm start
+    ```
 
-3. 打包正式文件，并切换 index.html 里面的 `<script>`
 
-``` bash
-vue-project-start$ npm run bundle
-```
+  * 打包正式文件，并切换 index.html 里面的 `<script>`
 
-``` html
-<!-- index.html  -->
+    ``` bash
+    vue-project-start$ npm run bundle
+    ```
 
-<!-- <script src="assets/bundle.js"></script> -->
-<script src="dist/bundle.js"></script>
-```
+    ``` html
+    <!-- index.html  -->
+
+    <!-- <script src="assets/bundle.js"></script> -->
+    <script src="dist/bundle.js"></script>
+    ```
 
 
 **参考**:
