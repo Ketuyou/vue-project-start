@@ -4,10 +4,16 @@
 
 ### 使用
 
-1. 克隆项目到当前目录下
+1. 克隆项目到当前目录下，注释 `.gitignore`
 
 ``` bash
 $ git clone git@github.com:114000/vue-project-start.git
+```
+
+``` bash
+# node_modules
+# dist
+.DS_Store
 ```
 
 2. 安装依赖
@@ -18,8 +24,8 @@ $ cd vue-project-start
 vue-project-start$ npm install
 ```
 
-3. 
-  * 8080端口启动服务器监听文件变化，实时刷新
+3.
+  * 11400端口启动服务器监听文件变化，实时刷新
 
     ``` bash
     vue-project-start$ npm start
@@ -43,3 +49,7 @@ vue-project-start$ npm install
 **参考**:
 
 1. [Webpack傻瓜式指南（一）by 张轩](http://zhuanlan.zhihu.com/FrontendMagazine/20367175)
+2. [Webpack 入门指迷 by 题叶](http://segmentfault.com/a/1190000002551952)
+3. [vueJS 官网](http://cn.vuejs.org/)
+4. [vue-router 文档](http://router.vuejs.org/zh-cn/index.html)
+5. [vue-resource - github](https://github.com/vuejs/vue-resource)
