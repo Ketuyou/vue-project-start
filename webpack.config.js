@@ -2,10 +2,16 @@ var path = require('path'),
 
     ROOT_PATH = path.resolve(__dirname),
     SRC_PATH = path.resolve(ROOT_PATH, 'src'),
-    DIST_PATH = path.resolve(ROOT_PATH, 'dist')
+    DIST_PATH = path.resolve(ROOT_PATH, 'dist'),
 
+    webpack = require('webpack'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new ExtractTextPlugin('main.css')
+  ],
   devtool: 'source-map',
   entry: SRC_PATH,
   output: {
@@ -32,5 +38,10 @@ module.exports = {
         }
       },
     ]
+  },
+  vue: {
+    loaders: {
+      css: ExtractTextPlugin.extract("css")
+    }
   }
 }
