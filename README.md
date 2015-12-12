@@ -1,8 +1,8 @@
-# 快速开始 Vue 项目
+# 快速开始 Vue 项目 v1.1.1
 
 > 包含了路由(VueRouter)和数据请求(VueResource)的基本功能
 
-### 使用
+## 使用
 
 1. 克隆项目到当前目录下，注释 `.gitignore`
 
@@ -41,9 +41,60 @@
     ``` html
     <!-- index.html  -->
 
-    <!-- <script src="assets/bundle.js"></script> -->
+    <head>
+    ...
+    <!-- <link rel="stylesheet" href="assets/main.css"> -->
+    <link rel="stylesheet" href="dist/main.css">
+    </head>
+    <body>
+    <app />
+
+    <!-- <script src="assets/common.js"></script>  -->
+    <!-- <script src="assets/bundle.js"></script>  -->
+
+    <script src="dist/common.js"></script>
     <script src="dist/bundle.js"></script>
+    <body>
+    ...
     ```
+
+
+## v1.1.1
+
+目录结构
+
+  ``` bash
+
+  vue-project-start
+    |- src/                       # 源文件目录
+        |- Common/                #  |- 通用文件目录/
+            |- Quest.js           #     |- 简单封装 jsonp 请求
+            |- Reset.css          #     |- 清除默认样式
+            ...
+        |- Configure/             #  |- 配置项目录/
+            |- Router.js          #     |- 路由设置
+            |- Store.js           #     |- 仓库
+            ...
+        |- Pages/                 #  |- 路由页面目录/
+            |- Ad.Lv1.Main.vue         
+            |- Movie.Lv1.List.vue
+            ...
+        |- Components/            #  |- 组件目录/
+            |- MovieCard.vue
+            |- Navigator.vue
+            ...
+        |- App.vue                #  |- app 根文件
+        |- index.js               #  |- webpack 启动文件
+        ...
+    |- node_modules/              #  |- 项目依赖模块目录
+    |- dist/                      #  |- webpack 打包文件目录（npm run build）
+    |- index.html                 
+    |- package.json               #  |- 项目描述
+    |- README.md
+    |- webpack.config.js          #  |- webpack 配置文件
+    |- .gitignore                 
+    ...
+  ```
 
 
 **参考**:

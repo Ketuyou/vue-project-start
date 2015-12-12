@@ -1,6 +1,6 @@
 {
   "name": "vue-project-start",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "a simple start project is build with vueJS",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/114000/vue-project-start#readme",
   "dependencies": {
     "normalize.css": "^3.0.3",
-    "vue": "^1.0.10",
+    "vue": "^1.0.11",
     "vue-resource": "^0.1.17",
     "vue-router": "^0.7.7"
   },
