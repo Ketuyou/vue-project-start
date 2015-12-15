@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import List from '../Pages/Movie.Lv1.List'
-import Ad from '../Pages/Ad.Lv1.Main'
+import List from '../Routes/Movie.Lv1.List'
+import Ad from '../Routes/Ad.Lv1.Main'
 
 Vue.use(VueRouter)
 

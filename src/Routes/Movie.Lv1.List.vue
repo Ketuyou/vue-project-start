@@ -3,7 +3,7 @@
 <ul>
   <li v-for="movie in movies">
     <movie-card
-      :score.once="movie.rating.average"
+      :score="movie.rating.average"
       :title.once="movie.title"
       :year.once="movie.year"
       :uri.once="movie.images.small"
@@ -29,7 +29,8 @@ let List = {
   ready() {
     Quest.jsonp({start:0, count:5},
       (response) => {
-        console.log(JSON.parse(JSON.stringify(response)))
+        // console.log(JSON.parse(JSON.stringify(response)))
+        console.log(response)
         this.movies = response.subjects
       }
     )
