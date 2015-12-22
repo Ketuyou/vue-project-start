@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import List from '../Routes/Movie.Lv1.List'
-import Ad from '../Routes/Ad.Lv1.Main'
+import MovieList from '../Routes/Lv1.MovieList'
+import Ad from '../Routes/Lv1.Ad'
 
 Vue.use(VueRouter)
 
@@ -10,7 +10,7 @@ let Router = new VueRouter()
 
 Router.map({
   '/list': {
-    component: List,
+    component: MovieList,
   },
   '/ad': {
     component: Ad,

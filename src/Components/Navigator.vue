@@ -3,8 +3,6 @@
   <a
     v-for="item in items"
     v-link="{path: item.path}"
-    :class="index === $index ? 'active' : ''"
-    @click="tab($index)"
   >
     {{item.name}}
   </a>
@@ -12,12 +10,12 @@
 
 </template>
 <script>
-import Store from '../Store'
+// import Store from '../Store'
 
-let {
-  state,
-  actions,
-} = Store
+// let {
+//   state,
+//   actions,
+// } = Store
 
 let Navigator = {
   data() {
@@ -28,29 +26,22 @@ let Navigator = {
       ]
     }
   },
-  computed: {
-    index: () => state.navigator.index,
-  },
-  methods: {
-    tab(index) {
-      actions.tabNav(index)
-    }
-  }
 }
 
 export { Navigator as default }
 </script>
 <style scoped>
 nav {
-  width: 640px; display: flex;
+  display: flex; position: fixed; left: 0; bottom: 0; width: 100%; height: 36px;
+  line-height: 36px;
 }
 
 nav a {
   flex: 1; color: #cd164e; font-size: 16px; background-color: #eee;
-  text-align: center; padding: 5px 0;
+  text-align: center;
 }
 
-nav a.active {
+.v-link-active {
   color: #f8f8f8; background-color: #cd163e;
 }
 </style>

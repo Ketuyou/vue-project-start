@@ -1,5 +1,4 @@
 <template>
-<h1 class="red">{{title}}</h1>
 <ul>
   <li v-for="movie in movies">
     <movie-card
@@ -41,8 +40,8 @@ export { List as default }
 
 </script>
 <style scoped>
-.red {
-  color: #cd164e;
+ul {
+  margin: 0;
 }
 li {
   padding: 5px 0;

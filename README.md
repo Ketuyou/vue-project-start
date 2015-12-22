@@ -69,15 +69,13 @@
     |- src/                       # 源文件目录
         |- Common/                #  |- 通用文件目录/
             |- Quest.js           #     |- 简单封装 jsonp 请求
+            |- Mixins.js          #     |- vue 的混合（空）
             |- Reset.css          #     |- 清除默认样式
             ...
-        |- Configure/             #  |- 配置项目录/
+        |- Routes/                #  |- 路由目录/
             |- Router.js          #     |- 路由设置
-            |- Store.js           #     |- 仓库
-            ...
-        |- Pages/                 #  |- 路由页面目录/
-            |- Ad.Lv1.Main.vue         
-            |- Movie.Lv1.List.vue
+            |- Lv1.Ad.vue         
+            |- Lv1.Movie.vue
             ...
         |- Components/            #  |- 组件目录/
             |- MovieCard.vue

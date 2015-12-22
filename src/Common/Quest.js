@@ -1,3 +1,8 @@
+/**
+ * a simple http request, you can replace it or delete it
+ *
+ */
+
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 
